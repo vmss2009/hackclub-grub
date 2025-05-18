@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-700 text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Visualizer</h1>
+
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="lg:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
+            <!-- Nav Links (Desktop) -->
+            <ul class="hidden lg:flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="library.html" class="hover:underline">Library</a></li>
+                <li><a href="visualizer.html" class="hover:underline">Visualizer</a></li>
+                <li><a href="faq.html" class="hover:underline">Help</a></li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-blue-600 px-4 pb-4">
+            <ul class="flex flex-col space-y-2">
+                <li><a href="index.html" class="block hover:underline">Home</a></li>
+                <li><a href="library.html" class="block hover:underline">Library</a></li>
+                <li><a href="visualizer.html" class="block hover:underline">Visualizer</a></li>
+                <li><a href="faq.html" class="block hover:underline">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="container mx-auto p-6 text-center">
+        <h2 class="text-4xl font-bold mb-4">Welcome to the Music Visualizer</h2>
+        <p class="mb-6 text-lg">See your music come to life with animated visuals. Start by uploading a song or explore
+            our library.</p>
+        <a href="visualizer.html" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-600">Try Visualizer</a>
+    </section>
+
+    <!-- Visualizer Preview -->
+    <section class="container mx-auto p-6">
+        <div class="bg-white rounded-lg shadow p-6">
+            <h3 class="text-2xl font-semibold mb-2">Preview</h3>
+            <div class="h-40 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-pulse rounded"></div>
+            <p class="text-sm text-gray-600 mt-2">Visualizer animation will appear here when a track is playing.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white text-center p-4 mt-8">
+        <p>Music Visualizer by a Hack Clubber</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

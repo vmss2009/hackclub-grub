@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help - Music Visualizer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-700 text-white">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Visualizer</h1>
+
+      <!-- Hamburger Button -->
+      <button id="menu-btn" class="lg:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Nav Links (Desktop) -->
+      <ul class="hidden lg:flex space-x-4">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="library.html" class="hover:underline">Library</a></li>
+        <li><a href="visualizer.html" class="hover:underline">Visualizer</a></li>
+        <li><a href="faq.html" class="hover:underline">Help</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-blue-600 px-4 pb-4">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="index.html" class="block hover:underline">Home</a></li>
+        <li><a href="library.html" class="block hover:underline">Library</a></li>
+        <li><a href="visualizer.html" class="block hover:underline">Visualizer</a></li>
+        <li><a href="faq.html" class="block hover:underline">Help</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- FAQ Section -->
+  <section class="container mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+
+    <div class="bg-white rounded shadow p-4 mb-4">
+      <h3 class="font-semibold">How do I use the visualizer?</h3>
+      <p class="text-sm text-gray-700">Go to the Visualizer page and upload a music file. The visual will animate based
+        on the audio.</p>
+    </div>
+
+    <div class="bg-white rounded shadow p-4 mb-4">
+      <h3 class="font-semibold">What file formats are supported?</h3>
+      <p class="text-sm text-gray-700">Most audio formats like MP3 and WAV are supported.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <h2 class="text-2xl font-bold mt-6 mb-2">Contact Us</h2>
+    <form class="bg-white rounded shadow p-4">
+      <input type="text" placeholder="Your Name" class="w-full p-2 mb-2 border rounded" />
+      <input type="email" placeholder="Your Email" class="w-full p-2 mb-2 border rounded" />
+      <textarea placeholder="Your Message" class="w-full p-2 border rounded"></textarea>
+      <button class="mt-2 bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-600">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center p-4 mt-8">
+    <p>Music Visualizer by a Hack Clubber</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
