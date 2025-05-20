@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery of Light</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-6 text-center">
+        <h1 class="text-4xl font-bold text-purple-700">Gallery of Light</h1>
+        <p class="text-sm text-gray-500 mt-1">A place for your art</p>
+      </div>
+      <nav class="border-t border-purple-200">
+        <ul class="flex justify-center space-x-6 py-3 text-purple-800 font-medium">
+          <li><a href="#about" class="hover:text-purple-500">About</a></li>
+          <li><a href="#gallery" class="hover:text-purple-500">Gallery</a></li>
+          <li><a href="#submit" class="hover:text-purple-500">Submit</a></li>
+          <li><a href="#contact" class="hover:text-purple-500">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about" class="bg-purple-50 py-10 border-t border-purple-200">
+      <div class="container mx-auto px-4 max-w-2xl">
+        <h2 class="text-2xl font-semibold text-purple-800 mb-4">About</h2>
+        <p class="leading-relaxed">
+            This is a virtual gallery. A place you can showcase your art. Read the desc of the art below, its really funny 🤣.
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery" class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-semibold text-purple-800 mb-6 text-center">Featured Works</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="rounded overflow-hidden shadow-md bg-white">
+            <img src="assets/art1.jpg" alt="Dusk over the Hills" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-purple-700">A beautiful coloured eye</h3>
+            </div>
+          </div>
+
+          <div class="rounded overflow-hidden shadow-md bg-white">
+            <img src="assets/art2.jpg" alt="Static Bloom" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-purple-700">A very good looking owl</h3>
+            </div>
+          </div>
+
+          <div class="rounded overflow-hidden shadow-md bg-white">
+            <img src="assets/art3.jpg" alt="Urban Haiku" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-purple-700">A happy woman</h3>
+            </div>
+          </div>
+
+          <div class="rounded overflow-hidden shadow-md bg-white">
+            <img src="assets/art4.jpg" alt="After the Storm" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-purple-700">A beautiful flower ?</h3>
+            </div>
+          </div>
+
+          <div class="rounded overflow-hidden shadow-md bg-white">
+            <img src="assets/art5.jpg" alt="Stillness in Motion" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-purple-700">Hands about to touch each other, but unable to touch 🤣</h3>
+            </div>
+          </div>
+
+          <div class="rounded overflow-hidden shadow-md bg-white">
+            <img src="assets/art6.jpg" alt="Letters to Nowhere" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-purple-700">I love the juice</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="submit" class="bg-purple-50 py-10 border-t border-purple-200">
+      <div class="container mx-auto px-4 max-w-xl">
+
+        <h2 class="text-2xl font-semibold text-purple-800 mb-6">Submit Your Work</h2>
+        <form class="bg-white p-6 rounded-lg shadow-md space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-purple-700">Your name</label>
+            <input type="text" id="name" name="name" class="w-full p-2 border border-purple-300 rounded" required />
+          </div>
+          <div>
+              <label for="title" class="block text-sm font-medium text-purple-700">Your art title</label>
+              <input type="text" id="title" name="title" class="w-full p-2 border border-purple-300 rounded" required />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-purple-700">Link to your artwork (a photo)</label>
+              <input type="text" id="message" name="message" class="w-full p-2 border border-purple-300 rounded" required />
+          </div>
+          <button type="submit" class="bg-purple-700 text-white px-4 py-2 rounded hover:bg-purple-800" onclick="alert('Submission sent!')">
+            Send Submission
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="py-10 border-t border-purple-200 bg-white">
+      <div class="container mx-auto px-4 max-w-xl text-center">
+        <h2 class="text-2xl font-semibold text-purple-800 mb-4">Contact</h2>
+        <p class="text-gray-700">Any questions ? 🥴</p>
+        <a href="mailto:vasa.mohanseshasai@gmail.com" class="text-purple-700 hover:underline">
+          vasa.mohanseshasai@gmail.com
+        </a>
+      </div>
+    </section>
+
+    <footer class="bg-purple-700 text-white text-center py-4 mt-10">
+      &copy; 2025 — By Mohan for Hackclub grub
+    </footer>
+
+  </body>
+</html>
